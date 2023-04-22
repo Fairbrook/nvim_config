@@ -1,5 +1,6 @@
 vim.cmd [[
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#branch#enabled = 1
 set guifont=DejaVu\ Sans:s12
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -28,5 +29,4 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 ]]
-vim.g.airline_powerline_fonts = 1
-vim.g.airline_theme = 'molokai'
+vim.g.airline_theme = 'bubblegum'
