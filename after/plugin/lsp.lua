@@ -5,7 +5,8 @@ lsp.ensure_installed({
 	"rust_analyzer",
 	"prismals",
 	"cssls",
-	"lua_ls"
+	"lua_ls",
+	"clangd"
 })
 
 lsp.on_attach(function(client, bufnr)
