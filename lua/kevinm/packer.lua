@@ -52,8 +52,6 @@ return require('packer').startup(function(use)
     use 'tpope/vim-vinegar'
     -- For git management
     use 'kdheepak/lazygit.nvim'
-    -- Markdown
-    use('iamcco/markdown-preview.nvim', { run = 'cd app && yarn install' })
 
     use 'jose-elias-alvarez/null-ls.nvim'
 
