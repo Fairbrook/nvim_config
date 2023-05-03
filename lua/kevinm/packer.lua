@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
             -- LSP Support
             { 'neovim/nvim-lspconfig' }, -- Required
             {
-                               -- Optional
+                -- Optional
                 'williamboman/mason.nvim',
                 run = function()
                     pcall(vim.cmd, 'MasonUpdate')
@@ -36,9 +36,9 @@ return require('packer').startup(function(use)
             },
             { 'williamboman/mason-lspconfig.nvim' }, -- Optional
             -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },       -- Required
-            { 'hrsh7th/cmp-nvim-lsp' },   -- Required
-            { 'L3MON4D3/LuaSnip' },       -- Required
+            { 'hrsh7th/nvim-cmp' },                  -- Required
+            { 'hrsh7th/cmp-nvim-lsp' },              -- Required
+            { 'L3MON4D3/LuaSnip' },                  -- Required
             { 'onsails/lspkind-nvim' }
         }
     }
@@ -56,4 +56,9 @@ return require('packer').startup(function(use)
     use('iamcco/markdown-preview.nvim', { run = 'cd app && yarn install' })
 
     use 'jose-elias-alvarez/null-ls.nvim'
+
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
 end)
