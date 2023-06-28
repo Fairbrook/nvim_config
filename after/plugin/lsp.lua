@@ -6,7 +6,8 @@ lsp.ensure_installed({
 	"prismals",
 	"cssls",
 	"lua_ls",
-	"clangd"
+	"clangd",
+    "eslint"
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -74,5 +75,13 @@ lsp.on_attach(function(client, bufnr)
         filter = function(ls) return ls.name ~= "tsserver" end
     }) end, opts)
 end)
+
+local lspconfig = require("lspconfig")
+
+lspconfig.eslint.setup({
+    on_attach = function (client)
+        client.server_capabilities.documentFormattingProvider = true
+    end,
+})
 
 lsp.setup()
