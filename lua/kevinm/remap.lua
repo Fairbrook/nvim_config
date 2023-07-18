@@ -23,4 +23,4 @@ vim.keymap.set("n", "<leader>s", vim.cmd.wa)
 vim.keymap.set("n", "<leader>q", vim.cmd.qa)
 
 vim.keymap.set("n", "<leader>V", ":vnew<CR>")
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux new tmux-sessionizer<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
