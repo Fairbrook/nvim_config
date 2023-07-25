@@ -7,7 +7,7 @@ null_ls.setup({
         null_ls.builtins.formatting.prismaFmt,
         null_ls.builtins.formatting.prettierd.with({
             condition = function(utils)
-              return utils.has_file({ ".prettierrc.js" }) or utils.has_file({ ".prettierrc" })
+              return utils.has_file({ ".prettierrc.js" }) or utils.has_file({ ".prettierrc" }) or utils.has_file({ ".prettierrc.json" })
             end,
         }),
     },
