@@ -84,6 +84,16 @@ _G.packer_plugins = {
     path = "/home/kevinm/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["codeium.vim"] = {
+    loaded = true,
+    path = "/home/kevinm/.local/share/nvim/site/pack/packer/start/codeium.vim",
+    url = "https://github.com/Exafunction/codeium.vim"
+  },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/kevinm/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/kevinm/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -188,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kevinm/.local/share/nvim/site/pack/packer/start/vim-vinegar",
     url = "https://github.com/tpope/vim-vinegar"
+  },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/kevinm/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
   }
 }
 

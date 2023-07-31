@@ -60,6 +60,12 @@ return require('packer').startup(function(use)
         run = function() vim.fn["mkdp#util#install"]() end,
     })
 
+    -- multiple cursors
+    use 'mg979/vim-visual-multi'
+
+    -- emmets
+    use 'mattn/emmet-vim'
+
     -- AI autocompletion
     use 'Exafunction/codeium.vim'
 end)
